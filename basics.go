@@ -7,4 +7,10 @@ func main() { // entry point of all the codes
 	myAge1()
 	myAge2()
 	ageAndWeight()
+	nameAgeWeight()
+	nameAge()
+	multipleNums()
+	minOfTwo()
 }
+
+// go run basics.go variableBasics.go multipleImports.go
