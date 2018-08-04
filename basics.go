@@ -2,12 +2,9 @@ package main
 
 import "fmt"
 
-func myAge() {
-	var age int
-	fmt.Println("my age is", age)
-}
-
-func main() {
+func main() { // entry point of all the codes
 	fmt.Printf("Hello, World\n")
-	myAge()
+	myAge1()
+	myAge2()
+	ageAndWeight()
 }
