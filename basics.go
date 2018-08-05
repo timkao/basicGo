@@ -25,6 +25,13 @@ func main() { // entry point of all the codes
 	intDemonstration()
 	floatDemonstration()
 	stringDemonstration()
+	convertDemonstration()
+
+	// demonstrate constant
+	fmt.Println("----- Constant in Go -------")
+	stringConst()
+	strongTypingPolicy()
+	numberConst()
 }
 
 // go run basics.go variableBasics.go multipleImports.go
