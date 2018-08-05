@@ -57,3 +57,5 @@ func multipleNums() {
 	fmt.Println("b is", b, "c is", c)
 	fmt.Println("-----------------")
 }
+
+var beSeen = 10000
