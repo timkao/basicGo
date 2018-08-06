@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() { // entry point of all the codes
 	fmt.Printf("Hello, World\n")
@@ -14,7 +16,7 @@ func main() { // entry point of all the codes
 	nameAgeWeight()
 	nameAge()
 	multipleNums()
-	fmt.Println("variable from other file", beSeen)
+	fmt.Println("variable from other file", BeSeen)
 
 	// multiple import format
 	minOfTwo()
