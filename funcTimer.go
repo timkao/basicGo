@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func funcTimer(testFunc func(int) (int, int), num int) time.Duration {
+func funcTimer(testFunc func(int) (int, int), num int) time.Duration { // 100% match to the type of fib...
 	start := time.Now()
 	testFunc(num)
 	end := time.Now()
