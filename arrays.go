@@ -20,6 +20,13 @@ func main() {
 	fmt.Println(arr2)
 	goodArrModifier(&arr2)
 	fmt.Println(arr2)
+
+	/* 通过 数组常量 的方法来初始化数组，而不用依次使用 []= 方法（所有的组成元素都有相同的常量语法） */
+	arr3 := [5]string{3: "Tim", 4: "Peggy"}
+	for i := range arr3 {
+		fmt.Printf("Person at %d is %s\n", i, arr3[i])
+	}
+
 }
 
 func fakeArrModifier(numArr [3]int) {
