@@ -23,4 +23,11 @@ func main() {
 		fmt.Println("Value of s:", s)
 		s = s + "a"
 	}
+
+	/* 如果你只需要索引，你可以忽略第二个变量 */
+	seasons := [...]string{"spring", "summer", "fall", "winter"}
+	for idx := range seasons {
+		fmt.Println(idx)
+	}
+
 }
