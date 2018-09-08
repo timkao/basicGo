@@ -20,6 +20,7 @@ func main() {
 		fmt.Println(value)
 	}
 
+	/* reslice can only go forward */
 	slice1 = slice1[0:6] // start from 2, go all the way to 7
 	for _, value := range slice1 {
 		fmt.Println(value)
