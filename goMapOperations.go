@@ -15,6 +15,7 @@ func main() {
 	demoMap["kmart"] = 3
 	demoMap["hmart"] = 3
 
+	// map 默认是无序的，不管是按照 key 还是按照 value 默认都不排序
 	for key := range demoMap {
 		fmt.Printf("%s is here\n", key)
 	}

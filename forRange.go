@@ -9,6 +9,9 @@ import (
 	它可以迭代任何一个集合（包括数组和 map，详见第 7 和 8 章）。
 	语法上很类似其它语言中 foreach 语句，但您依旧可以获得每次迭代所对应的索引。
 	一般形式为：for ix, val := range collection { }
+
+	ix is pointer
+	while val is a "copy" of value
 */
 
 func main() {
