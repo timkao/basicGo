@@ -19,7 +19,7 @@ func copyFile(dst string, src string) (written int64, err error) {
 	}
 	defer srcFile.Close()
 
-	dstFile, err2 := os.Create(dst)
+	dstFile, err2 := os.Create(dst) // need to use "create". if the file already exists, we should write to it instead of copy
 	if err2 != nil {
 		fmt.Println("fail to open", dst)
 		return
