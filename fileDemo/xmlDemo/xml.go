@@ -11,7 +11,7 @@ func main() {
 	inputReader := strings.NewReader(input)
 	p := xml.NewDecoder(inputReader)
 
-	for t, err := p.Token(); err == nil; t, err = p.Token() {
+	for t, err := p.Token(); err == nil; t, err = p.Token() { // one token after another until the end of the string
 		switch token := t.(type) {
 		case xml.StartElement:
 			name := token.Name.Local
