@@ -10,7 +10,7 @@ func badCall() {
 
 func test() {
 	defer func() {
-		if e := recover(); e != nil {
+		if e := recover(); e != nil { // recover returns the error
 			fmt.Printf("panicing %s\n", e)
 		}
 	}()
