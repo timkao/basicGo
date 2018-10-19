@@ -22,7 +22,7 @@ func pump() chan int {
 }
 
 func suck(ch chan int) {
-	for {
-		fmt.Println(<-ch)
+	for v := range ch {
+		fmt.Println(v)
 	}
 }
