@@ -10,6 +10,8 @@ func main() {
 
 	go pump(ch1)
 	fmt.Println(<-ch1)
+	fmt.Println(<-ch1)
+
 }
 
 func pump(ch chan int) {
